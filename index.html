@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head> 
+<style>
+    #main{
+        display: flex;
+        border: 1px burlywood solid;
+        height: 35px;
+        list-style: none;
+      align-items: center;
+    
+    }
+  .navbar {
+  width: 100%;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 60px;
+  border-bottom: 1px solid #eee;
+}
+
+.logo {
+  font-size: 22px;
+  font-weight: bold;
+  color: #000;
+}
+
+.nav-links {
+  display: flex;
+  gap: 42px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 600;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #e94e1b; 
+}
+
+.book-btn {
+  background-color: #e94e1b;
+  color: white;
+  padding: 5px 14px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.book-btn:hover {
+  background-color: #c43f16;
+}
+#bg{background-image:url(https://content.r9cdn.net/rimg/himg/82/2c/7f/revato-3306151-12535578-228084.jpg?width=1200&height=630&crop=false) ;
+    background-size: cover;
+width: 100%;
+height: 100vh;
+position: absolute;
+background-repeat: no-repeat;
+display: flex;}
+#second2{  background-color: white;
+display: flexbox;
+background-color: white;
+border: 1px green solid;
+width: 250px;
+height: 500px;
+margin-left: 900px;
+position: relative;
+bottom: 400px;
+align-content: center;
+padding-left: 80px;
+}
+#photos{
+  margin-top: 120vh;
+
+
+}
+.image-box {
+  position: relative;
+  display: inline-block;
+  width: 200px;
+  height: 200px;
+  margin: 10px;
+  cursor: pointer;
+  padding: 40px;
+}
+
+
+.image-box input {
+  display: none;
+}
+
+
+.image-box img {
+  width: 100%;
+  height: 130%;
+  display: block;
+  border-radius: 10px;
+}
+
+
+.image-box .text {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 130%;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  border-radius: 10px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+
+.image-box input:checked + img + .text {
+  opacity: 1;
+}
+#last{
+background-color: rgb(28, 26, 26);
+width: 100%;
+height: 65vh;
+margin-top: 210px ;
+display: flex;
+color: white;
+padding-left: 25px;
+ }
+</style>
+<body>
+   
+   <nav id="main">
+    <li id="box1" style="padding-left: 10px; padding-right: 40px;"> (12) 345 67890</li>
+     <li id="box2"> info.colorlib@gmail.com</li>
+      <li style="padding-left: 700px;padding-top: 20px;"><img src="https://static.vecteezy.com/system/resources/previews/015/025/322/original/facebook-instagram-and-twitter-icon-free-vector.jpg" alt="" width="50px" height="50px"><br><br></li>
+       <li style="background-color: brown;color: white; padding-left: 10px; padding-right: 10px;">Booking  Now</li>
+        <li><img src="https://static.vecteezy.com/system/resources/previews/014/635/915/large_2x/round-flag-of-pakistan-illustration-vector.jpg" alt="" width="50px" height="50px"></li>
+   </nav>
+<div class="navbar">
+  <div class="logo">SONA</div>
+
+  <div class="nav-links">
+    <a href="#">Home</a>
+    <a href="#">Rooms</a>
+    <a href="#">About Us</a>
+    <a href="#">Pages</a>
+    <a href="#">News</a>
+    
+  </div>
+</div>
+<div id="bg" >
+  <section>
+  <div id="first"><h1 style="padding-top: 50px; padding-left: 50px;font-weight: 999px;font-size: 100px;color: white;"> Sona A luxury <br> Hotel
+</h1><p style="font-size: larger ;padding-left: 50px ;color: white " >Here are the best hotel booking sites, including recommendations for <br>international travel and for finding low-priced hotel rooms.</p>
+  </div>
+<div id="second2">
+  <h1 style="font-size: 25px;"> Booking Your Hotel</h1>check in <br>
+  <input type="date" ><br> <br>Check out <br><input type="text" placeholder="check out">
+<br> <br>Guest <br><input type="text" placeholder="Adult1">
+<br><br>Rooms <br><input type="text" placeholder="room1">
+</div> </section>
+</div>
+
+<div id="photos">
+<h1 style="text-decoration-line: underline; text-decoration-style: wavy; text-decoration-color: red; 
+color: rgb(71, 4, 71); text-align: center;">
+  LUXURY ROOMS AVAILABLE
+</h1>
+
+<label class="image-box">
+  <input type="checkbox">
+  <img src="https://www.jaypeehotels.com/blog/wp-content/uploads/2024/09/Blog-6-scaled.jpg" alt="Room 1">
+  <div class="text">Luxury Room <br><br>
+  RS12000</div>
+</label>
+
+<label class="image-box">
+  <input type="checkbox">
+  <img src="https://wallpapers.com/images/hd/luxury-hotel-room-apoorv-tikamgarh-unypb6z6lfpb86ck.jpg" alt="Room 2">
+  <div class="text">Deluxe Suite
+    <br><br>RS14000
+  </div>
+</label>
+
+
+<label class="image-box">
+  <input type="checkbox">
+  <img src="https://cache.marriott.com/marriottassets/marriott/MNLAP/mnlap-guestroom-0118-hor-clsc.jpg?interpolation=progressive-bilinear&" alt="Room 3">
+  <div class="text">Family Room
+   <br><br> RS20000
+  </div>
+</label>
+
+
+<label class="image-box">
+  <input type="checkbox">
+  <img src="https://images.rosewoodhotels.com/is/image/rwhg/hi-hgv-26330925-rhgmodelbedroom-1" alt="Room 4">
+  <div class="text">Couple room 
+    <br> <br><br>ONLY RS2999  
+  </div>
+</label>
+
+</div>
+<div id="last"> 
+  <id> <h1 style="font-size: xx-large; font-weight: 900;color: red;"> SONA</h1><br>
+  <p style="font-weight: 500;">We inspire and reach millions of travelers <br>
+across 90 local websites
+
+   </p> <br><br><br><br><br><li><a href="https://www.instagram.com/tahaa._hussain?igsh=MTIzbGxzY29nMGhjYg==" ><img src="https://tse1.mm.bing.net/th/id/OIP.CFOk8BbIPY2sHdvoFvNkGAHaHa?cb=12&rs=1&pid=ImgDetMain&o=7&rm=3" alt="insta" width="35px" height="35px"> </a>
+ 
+ <a href="https://www.facebook.com/login.php/"><img src="https://th.bing.com/th/id/OIP.VgfWevmVdjRKHG8bfhpVsgHaHa?w=216&h=216&c=7&r=0&o=7&cb=12&dpr=1.9&pid=1.7&rm=3" alt="facebook" width="35px" height="35px">
+ </a>
+ <a href="https://wa.me/923226242491" target="_blank"><img src="data:image/webp;base64,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" alt="whatsapp" width="35px" height="35px"></a>
+</li></id>
+  <id style="text-align: center;"> <br><h1 style="font-size: xx-large; font-weight: 900; padding-left: 200px;padding-right: 200px;color: yellow;">CONTACT US</h1>
+  <br>
+  (12) 345 67890 <br><br>
+info.colorlib@gmail.com <br><br>
+856 Cordia Extension Apt. 356, Lake,<br><br>
+United State</id><br><br>
+  <id> <br> <h1 style="font-size: xx-large; font-weight: 900; color: rgb(124, 92, 10);">
+NEW LATEST
+  </h1> <br><br>
+<br><br>Get the latest updates and <offers class="br"><br><br><input type="email" placeholder="Email">
+</id>
+</div>
+  
+
+
+   </body>
+</html>
